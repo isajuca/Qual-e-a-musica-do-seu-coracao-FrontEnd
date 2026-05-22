@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é a música do seu coração?</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="logo-container">
+            <div class="white-circle">
+                <!-- Certifique-se que o caminho da imagem está correto -->
+                <img src="images/logo.png" alt="Logo" class="logo-img">
+            </div>
+            <div class="logo-text">Sentimentos e música...</div>
+            <div class="subtitulo">Descubra a música que reflete seus sentimentos</div>
+        </div>
+
+        <div class="form-container">
+            <div class="card">
+                <h1 class="main-title">Qual é a música do seu coração?</h1>
+                <div class="divider-icons">❤ ✧ ♫ ✧ ❤</div>
+
+                <div class="input-section">
+                    <label class="input-label">❤ Como você se sente?</label>
+                    <textarea id="feelings" maxlength="500" placeholder="Ex: Sinto borboletas no estômago..."></textarea>
+                    <span class="char-count"><span id="current">0</span>/500</span>
+                </div>
+
+                <button class="btn-discover" id="btn-gerar" onclick="gerarMusica()">
+                    Descubra a música do seu coração ❤
+                </button>
+
+                <!-- RESULTADOS -->
+                <div id="results" class="results-container hidden">
+                    <div class="divider-line"></div>
+                    <h2 class="results-title">Sua Música</h2>
+                    <div class="music-result">
+                        <p class="song-display"><strong id="song-name"></strong></p>
+                        <p class="artist-display">por <span id="artist-name"></span></p>
+                        <div class="lyrics-box">
+                            <p><strong>Letra:</strong></p>
+                            <pre id="lyrics-text"></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+    <span class="footer-xoxo">xoxo, cupido digital...</span>
+    <p class="footer-sub">Feito com amor</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
