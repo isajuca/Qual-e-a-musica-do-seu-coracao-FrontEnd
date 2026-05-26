@@ -627,6 +627,49 @@ textarea:focus{
 }
 
 /* =========================
+   CORAÇÕES NO FUNDO
+========================= */
+
+body::before{
+    content:"❤ ♡ ✦ ♡ ❤ ✦ ♡ ❤";
+
+    position:fixed;
+
+    top:8%;
+    left:5%;
+
+    width:100%;
+    height:100%;
+
+    pointer-events:none;
+
+    color:rgba(242,166,190,0.35);
+
+    font-size:22px;
+
+    line-height:120px;
+
+    letter-spacing:90px;
+
+    z-index:0;
+
+    animation:floatHearts 8s ease-in-out infinite alternate;
+}
+
+/* ANIMAÇÃO SUAVE */
+
+@keyframes floatHearts{
+
+    from{
+        transform:translateY(0px);
+    }
+
+    to{
+        transform:translateY(10px);
+    }
+}
+
+/* =========================
    FOOTER
 ========================= */
 
